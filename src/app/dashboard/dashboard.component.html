@@ -1,0 +1,18 @@
+<app-sidebar></app-sidebar>
+  <div class="main-panel">
+    <app-header class="header navbar"></app-header>
+
+    <!-- main area -->
+    <div class="main-content">
+      <div class="content-view">
+        <div class="row">
+            <div class="col-lg-3" *ngFor="let card of dashboardCards">
+              <app-dashboard-card [card]="card"></app-dashboard-card>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+
