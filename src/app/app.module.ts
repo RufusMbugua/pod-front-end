@@ -13,6 +13,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './hero/hero.component';
 import { PopupComponent } from './popup/popup.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PopupComponent } from './popup/popup.component';
     UserProfileComponent,
     HomeComponent,
     HeroComponent,
-    PopupComponent
+    PopupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
