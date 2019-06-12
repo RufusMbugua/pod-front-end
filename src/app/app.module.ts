@@ -5,23 +5,27 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HeadComponent } from './head/head.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
 import { LoginComponent } from './login/login.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HomeComponent } from './home/home.component';
+import { HeroComponent } from './hero/hero.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeadComponent,
     SidebarComponent,
     DashboardComponent,
     DashboardCardComponent,
     LoginComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HomeComponent,
+    HeroComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
