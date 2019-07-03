@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './hero/hero.component';
 import { PopupComponent } from './popup/popup.component';
 import { FooterComponent } from './footer/footer.component';
+import { PropertyListComponent } from './property-list/property-list.component';
+import { PropertyComponent } from './property/property.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeroComponent,
     PopupComponent,
-    FooterComponent
+    FooterComponent,
+    PropertyListComponent,
+    PropertyComponent
   ],
   imports: [
     BrowserModule,
