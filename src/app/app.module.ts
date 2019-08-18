@@ -5,19 +5,29 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HeadComponent } from './head/head.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { MyBooksComponent } from './my-books/my-books.component';
-import { BookComponent } from './book/book.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
+import { LoginComponent } from './login/login.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HomeComponent } from './home/home.component';
+import { HeroComponent } from './hero/hero.component';
+import { PopupComponent } from './popup/popup.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeadComponent,
     SidebarComponent,
-    MyBooksComponent,
-    BookComponent
+    DashboardComponent,
+    DashboardCardComponent,
+    LoginComponent,
+    UserProfileComponent,
+    HomeComponent,
+    HeroComponent,
+    PopupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
