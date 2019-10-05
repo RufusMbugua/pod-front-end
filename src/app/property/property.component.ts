@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PropertyService } from '../property.service';
 import { Property } from './property';
 @Component({
   selector: 'app-property',
@@ -6,21 +7,14 @@ import { Property } from './property';
   styleUrls: ['./property.component.scss']
 })
 export class PropertyComponent implements OnInit {
+  constructor(private propertyService: PropertyService) { }
 
-  properties: Property []
-  constructor() { }
+  @Input() property: Property [];
+
+
+
 
   ngOnInit() {
-    this.properties = [
-      {
-        name: 'Nairobi Home',
-        description: 'Words'
-      },
-      {
-        name: 'Rongai Home',
-        description: 'Words'
-      }
-    ];
   }
 
 }

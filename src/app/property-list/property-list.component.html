@@ -8,8 +8,8 @@
                             <div class="overlay"></div>
                             <img src="https://via.placeholder.com/370x295" alt="" class="img-fluid">
                             <div class="rate-info">
-                                <h5>$550.000</h5>
-                                <span>For Rent</span>
+                                <h5>{{ property.price }}</h5>
+                                <span>{{ property.status }}</span>
                             </div>
                         </div>
                     </a>
@@ -17,13 +17,12 @@
                         <a href="24_Property_Single.html" title="">
                             <h3>{{ property.name }}</h3>
                             <p>
-                                <i class="la la-map-marker"></i>212 5th Ave, New York
+                                <i class="la la-map-marker"></i>{{ property.location }}
                             </p>
                         </a>
                         <ul>
-                            <li>3 Bathrooms</li>
-                            <li>2 Beds</li>
-                            <li>Area 555 Sq Ft</li>
+                            <li>{{ property.rooms }} Bathrooms</li>
+                            <li>Area {{property.size }} Sq Ft</li>
                         </ul>
                     </div>
                     <div class="card-footer">

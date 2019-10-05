@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Property } from '../property/property';
+import { PropertyService } from '../property.service';
 @Component({
   selector: 'app-property-list',
   templateUrl: './property-list.component.html',
@@ -8,19 +9,28 @@ import { Property } from '../property/property';
 export class PropertyListComponent implements OnInit {
 
   properties: Property [];
-  constructor() { }
+
+  constructor(private propertyService: PropertyService){
+
+  }
 
   ngOnInit() {
-    this.properties = [
-      {
-        name: 'Test',
-        description: 'Words'
+    this.get();
+  }
+
+
+  get() {
+    this.propertyService.get().subscribe(
+      res => {
+        this.properties = res;
+        console.log(this.properties)
       },
-      {
-        name: 'Rongai Home',
-        description: 'Words'
+      err => {
+        if (err.statusText === 'Unauthorized' || err.status === false || err.message === 'Ooops something went Wrong.') {
+          console.log(err.message)
+        }
       }
-    ];
+    );
   }
 
 }
